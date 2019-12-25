@@ -7,9 +7,13 @@ function foo(x: ?number): string {
   return 'default string.';
 }
 
+foo(1)
+foo()
+
 function concat(a: string, b: string): string {
   return a + b
 }
 
 concat('foo', 'bar') // work.
-// concat(1, 2)  // does'nt work.
+// concat(1, 2) // does'nt work.
+// concat(1) // does'nt work.
